@@ -1,10 +1,15 @@
 import React from 'react';
 import './Home.css';
+import imgEmpresas from '../../assets/img/imgEmpresa.jpg'
+import imgColegio from '../../assets/img/imgColegio.jpg'
+import imgAlumno from '../../assets/img/imgAlumno.jpg'
 
 const Home = () => {
     return (
         <div>
-            <h1>Estoy en Home es una prueba</h1>
+            <img src={imgEmpresas} alt="Empresas" />
+            <img src={imgColegio} alt="Centro educativo" />
+            <img src={imgAlumno} alt="Alumnos" />
         </div>
     );
 };

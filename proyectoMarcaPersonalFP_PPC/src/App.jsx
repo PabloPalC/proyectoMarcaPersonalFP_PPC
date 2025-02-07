@@ -6,7 +6,7 @@ import Alumno from './paginas/Alumno/Alumno';
 import CentroEducativo from './paginas/CentroEducativo/CentroEducativo';
 import Empresa from './paginas/Empresa/Empresa';
 import { Routes, Route } from 'react-router-dom';
-import Home from './paginas/Home';
+import Home from './paginas/Home/Home';
 function App() {
 
   return (

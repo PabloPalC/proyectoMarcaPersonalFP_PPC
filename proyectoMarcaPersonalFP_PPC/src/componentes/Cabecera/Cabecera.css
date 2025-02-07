@@ -1,1 +1,15 @@
 /* CSS DE LA CABECERA */
+header{
+    text-align: center;
+}
+
+.logo{
+    max-width: 55px;
+    float: left;
+}
+.idiomas{
+    max-width: 30px;
+    display: inline;
+    float: right;
+    margin: 0 0 5px 10px;
+}

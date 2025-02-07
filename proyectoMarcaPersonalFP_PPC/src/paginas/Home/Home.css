@@ -1,1 +1,7 @@
 /* CSS DE LA PÁGINA HOME */
+
+img{
+    display: inline-flex;
+    max-width: 250px;
+    margin: 6px;
+}

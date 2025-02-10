@@ -1,1 +1,32 @@
 /* CSS PARA EL PIE DE PAGINA */
+
+
+.logos{
+    max-width: 35px;
+    margin: 5px;
+}
+
+.logoMP{
+    max-width: 70px;
+    margin: 5px;
+}
+
+.datosAPI{
+    text-align: center;
+    background-color: orange;
+}
+
+.datosIndividuales {
+    margin: 0px 0px 0px 200px;
+    
+}
+
+.footer{
+    
+    margin-top: 25px;
+}
+
+.fondoFooter{
+    background-color: #374f59;
+    color: white;
+}

@@ -1,15 +1,18 @@
 /* CSS DE LA CABECERA */
+
 header{
     text-align: center;
+    background-color: rgb(219, 218, 221);
 }
 
+.titulo{
+    color: orange;
+}
 .logo{
-    max-width: 55px;
+    max-width: 100px;
     float: left;
 }
 .idiomas{
-    max-width: 30px;
-    display: inline;
-    float: right;
-    margin: 0 0 5px 10px;
+    max-width: 40px;
+    gap: 10px;
 }

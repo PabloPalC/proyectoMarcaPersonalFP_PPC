@@ -1,1 +1,2 @@
 He instalado 'react-router-dom'
+He importado el css y script requerido para que bootstrap funcione.

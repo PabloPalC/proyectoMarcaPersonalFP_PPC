@@ -1,7 +1,17 @@
 /* CSS DE LA PÁGINA HOME */
 
-img{
-    display: inline-flex;
-    max-width: 250px;
-    margin: 6px;
+.fondoHome{
+    background-color: rgb(227, 236, 243);
+    color: white;
 }
+
+.imgServicios{
+    max-width: 500px;
+    margin: 50px;
+    transition: 1s;
+    &:hover{
+        max-width: 525px;
+        transition: 1s;
+    }
+}
+

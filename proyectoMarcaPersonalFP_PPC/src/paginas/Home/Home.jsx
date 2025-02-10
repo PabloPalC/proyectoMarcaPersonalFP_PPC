@@ -6,10 +6,10 @@ import imgAlumno from '../../assets/img/imgAlumno.jpg'
 
 const Home = () => {
     return (
-        <div>
-            <img src={imgEmpresas} alt="Empresas" />
-            <img src={imgColegio} alt="Centro educativo" />
-            <img src={imgAlumno} alt="Alumnos" />
+        <div className='fondoHome'>
+            <a href="/empresa"><img className="col-4 imgServicios" src={imgEmpresas} alt="Empresas" /></a>
+            <a href="/centroeducativo"><img className="col-4 imgServicios" src={imgColegio} alt="Centro educativo" /></a>
+            <a href="/alumno"><img className="col-4 imgServicios" src={imgAlumno} alt="Alumnos" /></a>
         </div>
     );
 };

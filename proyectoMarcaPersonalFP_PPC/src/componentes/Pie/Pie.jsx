@@ -30,13 +30,13 @@ const Pie = () => {
             </section>
             <section>
                 <div className='text-center'>
-                    <h2>CIFP Carlos III</h2>
+                    <a href="https://cifpcarlos3.es/es"><h2>CIFP Carlos III</h2></a>
                     <p>C/ Carlos III, 30201 - Cartagena | 30019702@murciaeduca.es | 968321301</p>
-                    <img className='logos' src={logoFB} alt="Logo FaceBook" />
-                    <img className='logos' src={logoTW} alt="Logo Twitter" />
-                    <img className='logos' src={logoIG} alt="Logo Instagram" />
-                    <img className='logos' src={logoTK} alt="Logo Tiktok" />
-                    <img className='logos' src={logoYT} alt="Logo Youtube" />
+                    <a href="https://www.facebook.com/cifpcarlos3"><img className='logos' src={logoFB} alt="Logo FaceBook" /></a>
+                    <a href="https://x.com/cifpcarlos3"><img className='logos' src={logoTW} alt="Logo Twitter" /></a>
+                    <a href="https://www.instagram.com/cifpcarlos3/"><img className='logos' src={logoIG} alt="Logo Instagram" /></a>
+                    <a href="https://www.tiktok.com/@cifpcarlos3"><img className='logos' src={logoTK} alt="Logo Tiktok" /></a>
+                    <a href="https://www.youtube.com/c/cifpcarlosiiicartagena"><img className='logos' src={logoYT} alt="Logo Youtube" /></a>
                 </div>
             </section>
             <section>

@@ -6,6 +6,7 @@ import logoTK from '../../assets/logos/logotiktok.svg'
 import logoYT from '../../assets/logos/logoyoutube.svg'
 import logoTW from '../../assets/logos/logotw.svg'
 import logoMP from '../../assets/logos/mp-logoReves.png'
+import useCounts from '../../hooks/useCounts';
 
 const Pie = () => {
 

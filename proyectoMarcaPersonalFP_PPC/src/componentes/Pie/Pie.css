@@ -1,6 +1,5 @@
 /* CSS PARA EL PIE DE PAGINA */
 
-
 .logos{
     max-width: 35px;
     margin: 5px;
@@ -12,18 +11,23 @@
 }
 
 .datosAPI{
-    text-align: center;
+    margin: 0 15%;
+    justify-content: center;
+    display: flex;
     background-color: orange;
 }
 
 .datosIndividuales {
-    margin: 0px 0px 0px 200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 75px;
     
 }
 
 .footer{
     
-    margin-top: 25px;
+    margin: 25px 20px;
 }
 
 .fondoFooter{

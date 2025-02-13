@@ -1,12 +1,17 @@
-export function getCounts(tabla) {
-    const apiURL = `http://marcapersonalfp.test/api/v1/${tabla}/count`;
+export function getCounts() {
 
-    console.log(apiURL);
+    const api_URL_Base = `http://marcapersonalfp.test/api/v1/`;
 
-    return fetch(apiURL)
+
+    const fetchEmpresas = `${api_URL_Base}empresas/count`;
+    const fetchUsuarios = `${api_URL_Base}/users/count`;
+    const fetchProyectos = `${api_URL_Base}/proyectos/count`;
+
+    return fetch(fetchEmpresas)
         .then(response => response.json())
         .then(response => {
-            const { count } = response;
-            return count; // Devolvemos el valor de count
+            const { countEmpresas } = response;
+            return countEmpresas; // Devolvemos el valor de count
         });
+
 }

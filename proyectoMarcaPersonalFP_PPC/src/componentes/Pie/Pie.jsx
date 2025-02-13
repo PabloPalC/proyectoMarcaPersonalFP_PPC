@@ -10,23 +10,24 @@ import useCounts from '../../hooks/useCounts';
 
 const Pie = () => {
 
+    const counts = useCounts();
     return (
         
         <footer className='align-items-center fondoFooter'>
-            <section className='datosAPI d-flex'>
+            <section className='datosAPI'>
                 <div className='datosIndividuales'>
                     <h2>Empresas</h2>
-                    <h2>2</h2>
+                    <h2>{counts.empresas}</h2>
                 </div>
 
                 <div className='datosIndividuales'>
                     <h2>Proyectos</h2>
-                    <h2>2</h2>
+                    <h2>{counts.proyectos}</h2>
                 </div>
 
                 <div className='datosIndividuales'>
                     <h2>Alumnos</h2>
-                    <h2>2</h2>
+                    <h2>{counts.usuarios}</h2>
                 </div>
             </section>
             <section>

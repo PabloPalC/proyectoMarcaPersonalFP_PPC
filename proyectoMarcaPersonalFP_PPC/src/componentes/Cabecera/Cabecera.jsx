@@ -3,12 +3,7 @@ import './Cabecera.css';
 import banderaUK from '../../assets/logos/banderaUK.svg'
 import banderaESP from '../../assets/logos/banderaESP.svg'
 import logoMP from '../../assets/logos/mp-logoNaranja100.png'
-import { Link, useNavigate } from 'react-router-dom';
-
-function volverHome(){
-    const navigate = useNavigate();
-    navigate('/')
-}
+import { Link } from 'react-router-dom';
 
 const Cabecera = () => {
 

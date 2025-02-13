@@ -5,26 +5,38 @@ const useCounts = (tabla) =>  {
 
     // Estado con la lista de counts que recuperamos de la REST API
 
-    const [counts, setCounts] = useState([]);
+    const [counts, setCounts] = useState({empresas: 0,
+                                          usuarios : 0,
+                                          proyectos:0
+                                        });
+       
+    function obtenerDatos() {
 
-    function obtenerCount(){
+        setCounts ( {... counts,
+                    empresas : obtenerCount("empresas")});
 
+        setCounts ( {... counts,
+                    usuarios : obtenerCount("usuarios")});
+
+        setCounts ( {... counts,
+                    proyectos : obtenerCount("proyectos")});
+
+    }
+    function obtenerCount(tabla) {
         // Usamos el servicio de obtención de counts que hemos creado
-
-        getCounts(tabla).then(count => {
-
+        return getCounts(tabla).then(count => {
             // Cargamos los counts en el estado del componente
-
-            setCounts(count);
-        });                    
+            return count;
+        });
     }
 
     // Llamamos a la función de extracción de datos con un useEffect
     // para que solo se ejecute una vez
     
-    useEffect(() => {obtenerCount()}, [tabla]);
 
-    return {counts};
+    useEffect(() => {obtenerDatos}, []);
+
+    return counts;
 }
 
 export default useCounts;

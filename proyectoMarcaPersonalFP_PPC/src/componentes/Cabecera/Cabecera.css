@@ -1,18 +1,28 @@
 /* CSS DE LA CABECERA */
 
-header{
-    text-align: center;
+header {
     background-color: rgb(219, 218, 221);
+    flex-grow: 1;
 }
 
-.titulo{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo {
     color: orange;
+    flex-grow: 1;
+    text-align: center;
 }
-.logo{
+
+.logo {
     max-width: 100px;
-    float: left;
 }
-.idiomas{
-    max-width: 40px;
-    gap: 10px;
+
+.idiomas {
+    max-width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

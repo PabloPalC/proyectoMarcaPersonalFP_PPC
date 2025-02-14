@@ -1,16 +1,34 @@
 import React from 'react';
 import './Home.css';
-import imgEmpresas from '../../assets/img/imgEmpresa.jpg'
-import imgColegio from '../../assets/img/imgColegio.jpg'
-import imgAlumno from '../../assets/img/imgAlumno.jpg'
+import imgEmpresas from '../../assets/img/imgEmpresa.jpg';
+import imgColegio from '../../assets/img/imgColegio.jpg';
+import imgAlumno from '../../assets/img/imgAlumno.jpg';
 
 const Home = () => {
     return (
         <div className='fondoHome'>
-            <a href="/empresa"><img className="col-4 imgServicios" src={imgEmpresas} alt="Empresas" /></a>
-            <a href="/centroeducativo"><img className="col-4 imgServicios" src={imgColegio} alt="Centro educativo" /></a>
-            <a href="/alumno"><img className="col-4 imgServicios" src={imgAlumno} alt="Alumnos" /></a>
+            <div className="contenedorServicios">
+                <div className="servicioItem">
+                    <a href="/empresa">
+                        <img className="imgServicios" src={imgEmpresas} alt="Empresas" />
+                        <span className="textoHover">Empresas</span>
+                    </a>
+                </div>
+                <div className="servicioItem">
+                    <a href="/centroeducativo">
+                        <img className="imgServicios" src={imgColegio} alt="Centro educativo" />
+                        <span className="textoHover">Centro Educativo</span>
+                    </a>
+                </div>
+                <div className="servicioItem">
+                    <a href="/alumno">
+                        <img className="imgServicios" src={imgAlumno} alt="Alumnos" />
+                        <span className="textoHover">Alumnos</span>
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };
+
 export default Home;

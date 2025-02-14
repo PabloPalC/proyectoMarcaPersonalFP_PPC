@@ -1,17 +1,53 @@
-/* CSS DE LA PÁGINA HOME */
-
-.fondoHome{
+.fondoHome {
     background-color: rgb(227, 236, 243);
-    color: white;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.imgServicios{
-    max-width: 500px;
-    margin: 50px;
+.contenedorServicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.servicioItem {
+    position: relative; /* Permite posicionar el texto respecto a la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgServicios {
+    max-width: 450px;
     transition: 1s;
-    &:hover{
-        max-width: 525px;
-        transition: 1s;
-    }
 }
 
+.imgServicios:hover {
+    max-width: 525px;
+    transition: 1s;
+}
+
+/* Texto que aparece al hacer hover */
+.textoHover {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgba(0, 0, 0, 0.8); 
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(255, 136, 0, 0.5); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Hace que el texto aparezca cuando pasas el raton */
+.servicioItem:hover .textoHover {
+    opacity: 1;
+}

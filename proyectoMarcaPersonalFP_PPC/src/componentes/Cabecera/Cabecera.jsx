@@ -7,14 +7,17 @@ import { Link } from 'react-router-dom';
 
 const Cabecera = () => {
 
+    function cambiarIdioma(){
+        
+    }
     
     return (
             <header>
                 <nav>
                     <Link to="/"> <img className='logo' src={logoMP} alt="Logo MarcaPersonal" /> </Link>
                     <h1 className='titulo'>Marca Personal FP</h1>
-                    <img className='d-flex align-items-center idiomas' src={banderaESP} alt="Bandera Español" />
-                    <img className='d-flex align-items-center idiomas' src={banderaUK} alt="Bandera Britanica" />
+                    <img onClick={cambiarIdioma} className='d-flex align-items-center idiomas' src={banderaESP} alt="Bandera Español" />
+                    <img onClick={cambiarIdioma} className='d-flex align-items-center idiomas' src={banderaUK} alt="Bandera Britanica" />
                 </nav>
             </header>
     );

@@ -3,7 +3,7 @@ import { getCounts } from "../servicios/getCounts";
 
 const useCounts = () =>  {    
 
-    // Estado con la lista de counts que recuperamos de la REST API
+    // Estado con la lista de counts que recuperamos de la REST API.
     const [counts, setCounts] = useState({
         empresas: 0,
         usuarios: 0,
@@ -20,8 +20,7 @@ const useCounts = () =>  {
         });
     }
 
-    // Llamamos a la función de coger los datos con un useEffect
-    // para que solo se ejecute una vez
+    // Llamamos a la función de coger los datos con un useEffect para que solo se ejecute una vez.
     useEffect(() => {obtenerDatos()}, []);
 
     return counts;

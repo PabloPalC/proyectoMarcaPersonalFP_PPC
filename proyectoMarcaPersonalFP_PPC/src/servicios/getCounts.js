@@ -8,10 +8,36 @@ export function getCounts() {
     const fetchProyectos = `${api_URL_Base}/proyectos/count`;
 
     return fetch(fetchEmpresas)
-        .then(response => response.json())
-        .then(response => {
-            const { countEmpresas } = response;
-            return countEmpresas; // Devolvemos el valor de count
-        });
+    .then(response => response.json())
+    .then(empresasResponse => {
+        const countEmpresas = empresasResponse.count;
+        return {
+            countEmpresas,
+        };
+    });
+    return fetch(fetchUsuarios)
+    .then(response => response.json())
+    .then(usuariosResponse => {
+        const countUsuarios = usuariosResponse.count;
+        return {
+            countUsuarios,
+        };
+    });
+        return fetch(fetchUsuarios)
+            .then(response => response.json())
+            .then(usuariosResponse => {
+                const countUsuarios = usuariosResponse.count;
+                return fetch(fetchProyectos)
+                    .then(response => response.json())
+                    .then(proyectosResponse => {
+                        const countProyectos = proyectosResponse.count;
+                        return {
+                            countEmpresas,
+                            countUsuarios,
+                            countProyectos
+                        };
+                    });
+            });
 
 }
+

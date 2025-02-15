@@ -16,18 +16,18 @@ const Pie = () => {
         <footer className='align-items-center fondoFooter'>
             <section className='datosAPI'>
                 <div className='datosIndividuales'>
-                    <h2>Empresas</h2>
-                    <h2>{counts.empresas}</h2>
+                    <h6>Empresas</h6>
+                    <h1>{counts.empresas}</h1>
                 </div>
 
                 <div className='datosIndividuales'>
-                    <h2>Proyectos</h2>
-                    <h2>{counts.proyectos}</h2>
+                    <h6>Proyectos</h6>
+                    <h1>{counts.proyectos}</h1>
                 </div>
 
                 <div className='datosIndividuales'>
-                    <h2>Alumnos</h2>
-                    <h2>{counts.usuarios}</h2>
+                    <h6>Alumnos</h6>
+                    <h1>{counts.usuarios}</h1>
                 </div>
             </section>
             <section>

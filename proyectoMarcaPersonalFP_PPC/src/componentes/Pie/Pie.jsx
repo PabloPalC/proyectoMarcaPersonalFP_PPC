@@ -13,22 +13,23 @@ import IdiomaContext from '../contextos/IdiomaContext';
 const Pie = () => {
     const idioma = useContext(IdiomaContext);
     const counts = useCounts();
+
     return (
         
         <footer className='align-items-center fondoFooter'>
             <section className='datosAPI'>
                 <div className='datosIndividuales'>
-                    <h6>Empresas</h6>
+                    <h6>{idioma.empresas}</h6>
                     <h1>{counts.empresas}</h1>
                 </div>
 
                 <div className='datosIndividuales'>
-                    <h6>Proyectos</h6>
+                    <h6>{idioma.proyectos}</h6>
                     <h1>{counts.proyectos}</h1>
                 </div>
 
                 <div className='datosIndividuales'>
-                    <h6>Alumnos</h6>
+                    <h6>{idioma.alumnos}</h6>
                     <h1>{counts.usuarios}</h1>
                 </div>
             </section>
@@ -46,7 +47,7 @@ const Pie = () => {
             <section>
                 <div className='text-center'>
                     <img className='logoMP' src={logoMP} alt="Logo MarcaPersonal" />
-                    Marca Personal. FP | Diseño Web CFGS Desarrollo de Aplicaciones Web &copy; 2025
+                    Marca Personal. FP | {idioma.grado} CFGS Desarrollo de Aplicaciones Web &copy; 2025
                 </div>
             </section>
         </footer>

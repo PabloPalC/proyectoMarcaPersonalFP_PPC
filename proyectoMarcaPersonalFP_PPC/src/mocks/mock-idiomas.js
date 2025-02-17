@@ -1,5 +1,5 @@
 // Este va a ser el mock de idiomas para cambiarlo.
-const idiomas = {
+const idioma = {
     "es" : {
         servicios: {empresas: "Empresas",
                  proyectos: "Proyectos",
@@ -15,4 +15,4 @@ const idiomas = {
         }      
     }      
 };
-  export default idiomas;
+  export default idioma;

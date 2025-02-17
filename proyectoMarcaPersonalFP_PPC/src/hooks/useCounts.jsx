@@ -21,7 +21,7 @@ const useCounts = () =>  {
     }
 
     // Llamamos a la función de coger los datos con un useEffect para que solo se ejecute una vez.
-    useEffect(() => {obtenerDatos()}, []);
+    useEffect(obtenerDatos, []);
 
     return counts;
 }

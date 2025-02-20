@@ -8,7 +8,7 @@ import logoTW from '../../assets/logos/logotw.svg'
 import logoMP from '../../assets/logos/mp-logoReves.png'
 import useCounts from '../../hooks/useCounts';
 import { useContext } from 'react';
-import IdiomaContext from '../contextos/IdiomaContext';
+import IdiomaContext from '../../contextos/IdiomaContext';
 
 const Pie = () => {
     const idioma = useContext(IdiomaContext);

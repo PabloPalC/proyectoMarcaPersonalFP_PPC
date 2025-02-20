@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './paginas/Home/Home';
 import { useState } from 'react';
 import idioma from './mocks/mock-idiomas';
-import IdiomaContext from './componentes/contextos/IdiomaContext';
+import IdiomaContext from './contextos/IdiomaContext';
 
 function App() {
 

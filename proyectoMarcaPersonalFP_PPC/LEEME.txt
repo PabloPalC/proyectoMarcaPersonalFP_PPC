@@ -1,2 +1,2 @@
-He instalado 'react-router-dom'
-He importado el css y script requerido para que bootstrap funcione.
+He instalado 'react-router-dom' // npm install 'react-router-dom'
+He importado el css y script requerido para que bootstrap funcione. // Importado en el index.html

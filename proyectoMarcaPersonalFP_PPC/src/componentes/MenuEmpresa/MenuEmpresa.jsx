@@ -8,11 +8,13 @@ const MenuEmpresa = () => {
     return (
         <nav>
             <ul>
-                <li className='activo'>[ Empresa ]</li> 
-                <Link to="empresa/proyectos">
+                <li className='activo'> [ {idioma.empresas} ]</li> 
+                <Link to="proyectos">
                     <li className='enlaces'>{idioma.proyectos}</li>
                 </Link>
+                <Link to="alumnos">
                 <li className='enlaces'>{idioma.alumnos}</li>
+                </Link>
             </ul>
         </nav>
     );

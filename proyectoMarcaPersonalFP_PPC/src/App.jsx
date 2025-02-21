@@ -9,6 +9,7 @@ import Home from './paginas/Home/Home';
 import { useState } from 'react';
 import idioma from './mocks/mock-idiomas';
 import IdiomaContext from './contextos/IdiomaContext';
+import Busquedaproyectos from './paginas/BusquedaProyectos/BusquedaProyectos';
 
 function App() {
 
@@ -48,6 +49,9 @@ function App() {
               element={<Alumno></Alumno>}> 
           </Route>
 
+          <Route path="/empresa/proyectos"
+              element={<Busquedaproyectos></Busquedaproyectos>}> 
+          </Route>
         </Routes>
          
         </IdiomaContext.Provider>

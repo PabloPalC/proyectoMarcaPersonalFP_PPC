@@ -1,6 +1,7 @@
 .activo {
     color: orange;
     font-weight: bold;
+    padding: 10px;
 }
 
 .enlaces {

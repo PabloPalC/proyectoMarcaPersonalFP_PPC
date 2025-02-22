@@ -1,1 +1,10 @@
 /* CSS PARA LISTA FAMILIAS PROFESIONALES */
+
+.tarjeta {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}

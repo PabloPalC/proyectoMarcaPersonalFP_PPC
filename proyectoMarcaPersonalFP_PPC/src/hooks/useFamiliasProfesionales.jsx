@@ -1,9 +1,7 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getFamiliasProfesionales } from "../servicios/getFamiliasProfesionales";
 
-const useFamiliasProfesionales = () =>  {    
-
-    // Estado con la lista de counts que recuperamos de la REST API.
+const useFamiliasProfesionales = () => {    
     const [listaFamiliasProfesionales, setListaFamiliasProfesionales] = useState([]);
        
     function obtenerFamiliasProfesionales() {
@@ -12,7 +10,6 @@ const useFamiliasProfesionales = () =>  {
         });
     }
 
-    // Llamamos a la función de coger los datos con un useEffect para que solo se ejecute una vez.
     useEffect(obtenerFamiliasProfesionales, []);
 
     return listaFamiliasProfesionales;

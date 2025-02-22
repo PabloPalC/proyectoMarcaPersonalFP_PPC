@@ -10,7 +10,6 @@ export async function getFamiliasProfesionales() {
         id: familia.id
     }));
 
-    console.log(listaFamiliasProfesionales);
     return {
         listaFamiliasProfesionales
     };

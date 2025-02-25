@@ -1,1 +1,40 @@
-/* CSS PARA RESULTADOS BUSQUEDA PROYECTOS */
+/* CSS PARA RESULTADOS BUSQUEDA PROYECTOS */s
+
+.busqueda-proyectos {
+    max-width: 800px;
+    margin: auto;
+}
+
+.boton-filtrar {
+    background: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.botonFamilias{
+    color: black;
+    border-radius: 5px;
+    &:hover{
+        background-color: #ccc;
+    }
+}
+
+.boton-filtrar:hover {
+    text-decoration: none;
+}
+
+.resultados {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.sin-proyectos {
+    color: gray;
+}

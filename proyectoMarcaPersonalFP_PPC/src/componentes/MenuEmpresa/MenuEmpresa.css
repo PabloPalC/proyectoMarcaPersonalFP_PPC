@@ -16,6 +16,9 @@ ul, ol {
 }
 nav{
     background-color: rgb(219, 218, 221);
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 

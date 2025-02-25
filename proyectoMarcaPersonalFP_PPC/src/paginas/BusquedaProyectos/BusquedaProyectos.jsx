@@ -1,12 +1,13 @@
 import ListaFamiliasProfesionales from "../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales";
 import MenuEmpresa from "../../componentes/MenuEmpresa/MenuEmpresa";
+import ResultadosBusquedaProyectos from "../../componentes/ResultadosBusquedaProyectos/ResultadosBusquedaProyectos";
 import './BusquedaProyectos.css';
 const Busquedaproyectos = () => {
     return(
-        <div>
+        <div className="busqueda-proyectos">
             <MenuEmpresa></MenuEmpresa>
-                <h4 className="tituloBusquedaProyectos">Búsqueda de Proyectos</h4>
             <ListaFamiliasProfesionales></ListaFamiliasProfesionales>
+            <ResultadosBusquedaProyectos></ResultadosBusquedaProyectos>
         </div>
     );
 };

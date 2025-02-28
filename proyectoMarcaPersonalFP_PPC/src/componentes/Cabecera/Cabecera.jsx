@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Cabecera = (props) => {
 
-    const seleccionarIdioma = (idiomaSeleccionado) => {
+    function seleccionarIdioma(idiomaSeleccionado){
         props.cambiarIdioma(idiomaSeleccionado);
     };
 

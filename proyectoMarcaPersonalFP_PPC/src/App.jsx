@@ -10,6 +10,8 @@ import { useState } from 'react';
 import idioma from './mocks/mock-idiomas';
 import IdiomaContext from './contextos/IdiomaContext';
 import Busquedaproyectos from './paginas/BusquedaProyectos/BusquedaProyectos';
+import BusquedaAlumnos from './paginas/BusquedaAlumnos/BusquedaAlumnos';
+import MenuEmpresa from './componentes/MenuEmpresa/MenuEmpresa';
 
 function App() {
 
@@ -50,7 +52,17 @@ function App() {
           </Route>
 
           <Route path="/empresa/proyectos"
-              element={<Busquedaproyectos></Busquedaproyectos>}> 
+              element={ <div>
+                <MenuEmpresa></MenuEmpresa>
+                <Busquedaproyectos></Busquedaproyectos>
+                        </div> }> 
+          </Route>
+
+          <Route path="/empresa/alumnos"
+              element={<div>
+                <MenuEmpresa></MenuEmpresa>
+                <BusquedaAlumnos></BusquedaAlumnos>
+                        </div> }> 
           </Route>
         </Routes>
          

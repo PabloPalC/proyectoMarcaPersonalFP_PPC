@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import useFamiliasProfesionales from "../../hooks/useFamiliasProfesionales";
 import useProyectosFiltrados from "../../hooks/useProyectosFiltrados";
 import ResultadosBusquedaProyectos from '../../componentes/ResultadosBusquedaProyectos/ResultadosBusquedaProyectos';
+import ListaFamiliasProfesionales from '../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales';
 import '../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales.css';
 
 const BusquedaProyectos = () => {
     const [mostrar, setMostrar] = useState(false);
     const [familiasSeleccionadas, setFamiliasSeleccionadas] = useState([]);
     
-    const familiasProfesionales = useFamiliasProfesionales();
     const { listaProyectosFiltrada, filtrarLista } = useProyectosFiltrados();
 
     function mostrandoFamilias() {
@@ -16,9 +15,8 @@ const BusquedaProyectos = () => {
     }
 
     function toggleFamiliaSeleccionada(familiaId) {
-
         const nuevasFamiliasSeleccionadas = familiasSeleccionadas.includes(familiaId)
-            ? familiasSeleccionadas.filter(id => id != familiaId)
+            ? familiasSeleccionadas.filter(id => id !== familiaId)
             : [...familiasSeleccionadas, familiaId];
         
         setFamiliasSeleccionadas(nuevasFamiliasSeleccionadas);
@@ -33,17 +31,10 @@ const BusquedaProyectos = () => {
                     Filtrar por familia profesional {mostrar ? '▲' : '▼'}
                 </button>
                 {mostrar && (
-                    <div className="mt-2">
-                        {familiasProfesionales.map((familia) => (
-                            <button
-                                key={familia.id}
-                                className={`botonFamilias m-1 ${familiasSeleccionadas.includes(familia.id) ? 'seleccionado' : ''}`}
-                                onClick={() => toggleFamiliaSeleccionada(familia.id)}
-                            >
-                                {familia.nombre}
-                            </button>
-                        ))}
-                    </div>
+                    <ListaFamiliasProfesionales
+                        familiasSeleccionadas={familiasSeleccionadas}
+                        toggleFamiliaSeleccionada={toggleFamiliaSeleccionada}
+                    />
                 )}
             </div>
             <ResultadosBusquedaProyectos proyectosFiltrados={listaProyectosFiltrada} />

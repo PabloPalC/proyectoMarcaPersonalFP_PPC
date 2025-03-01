@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './ProyectoMinCard.css';
+import fotoProyectos from '../../assets/img/proyectos.jpg';
 const ProyectoMinCard = ({ proyectos = [] }) => {
 
     function mostrarCiclos(proyectos) {
@@ -11,7 +12,6 @@ const ProyectoMinCard = ({ proyectos = [] }) => {
         );
     }
    
-
     function mostrarProyectos(proyectos) {
         return proyectos.map((proyecto) => ({
             nombre: proyecto.nombre,
@@ -34,7 +34,15 @@ const ProyectoMinCard = ({ proyectos = [] }) => {
      // Ahora toca devolver el boton con los datos necesarios para devolver todo.
     return (
         <div className="mt-2">    
-                // Aqui va el boton con los datos necesarios para devolver todo.
+            {proyectos.map((proyecto) => (
+                <div key={proyecto.id} className="border p-3 mt-2">
+                    <img className='imagenProyecto' src={fotoProyectos} alt="Imagen Proyectos" />
+                    <h5 className="negrita">{proyecto.nombre}</h5>
+                    <p className='negrita'>ALUMNOS: {proyecto.participantes.map((participante) => participante.nombre).join(', ')}</p>
+                    <p className='negrita'>Tutor: {proyecto.docente_id}</p>
+                    <p className='negrita subrayado'>Ciclos: {proyecto.ciclos.map((ciclo) => ciclo.codCiclo).join(' | ')}</p>
+                </div>
+            ))}
         </div>
     );
 };

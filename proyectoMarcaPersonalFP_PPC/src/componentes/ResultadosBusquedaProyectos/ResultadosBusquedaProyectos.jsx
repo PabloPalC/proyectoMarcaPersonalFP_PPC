@@ -14,7 +14,7 @@ const ResultadosBusquedaProyectos = ({ proyectosFiltrados }) => {
             <div className="border p-3">
                 <h5 className="fw-bold">Resultados</h5>
                 <button className="boton-filtrar" onClick={mostrandoProyectos}>
-                    Proyectos {mostrar ? '▲' : '▼'}
+                     {mostrar ? '▲' : '▼'}
                 </button>
                 {mostrar && proyectosFiltrados.length > 0 && (
                     <ProyectoMinCard proyectos={proyectosFiltrados} />

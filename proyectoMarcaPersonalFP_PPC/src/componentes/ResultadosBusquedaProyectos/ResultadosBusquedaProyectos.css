@@ -1,8 +1,11 @@
-/* CSS PARA RESULTADOS BUSQUEDA PROYECTOS */s
+/* CSS PARA RESULTADOS BUSQUEDA PROYECTOS */
 
 .busqueda-proyectos {
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
+    display: flex;
+    flex: start;
+    width: 100%;
 }
 
 .boton-filtrar {

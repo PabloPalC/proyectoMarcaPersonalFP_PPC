@@ -6,9 +6,12 @@ import ListaPerfilesCompetenciales from '../../componentes/ListaPerfilesCompeten
 import ListaFamiliasProfesionales from '../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales';
 
 const BusquedaAlumnos = () => {
+
     const { listaAlumnosFiltrada, filtrarLista } = useAlumnosFiltrados();
+
     const [mostrarPerfiles, setMostrarPerfiles] = useState(false);
     const [mostrarFamilias, setMostrarFamilias] = useState(false);
+    
     const [perfilesSeleccionados, setPerfilesSeleccionados] = useState([]);
     const [familiasSeleccionadas, setFamiliasSeleccionadas] = useState([]);
 

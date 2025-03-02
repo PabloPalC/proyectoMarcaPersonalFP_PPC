@@ -1,16 +1,56 @@
-/* CSS PARA PROYECTO MIN CARD */
-.negrita{
+/* CSS PARA ALUMNO MIN CARD */
+.negrita {
     font-weight: bold;
 }
 
-.subrayado{
+.subrayado {
     text-decoration: underline;
 }
 
-.imagenAlumno{
+.alumno-card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagenAlumno {
     width: 100%;
-    max-width: 100px;
-    float: left;
+    max-width: 150px;
     margin: 10px;
     border: 1px solid black;
+}
+
+.alumno-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.idiomas {
+    margin-top: 10px;
+}
+
+.idioma {
+    margin-bottom: 10px;
+}
+
+.idioma-nombre {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.banderas {
+    display: flex;
+    flex-direction: row;
+}
+
+.bandera {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.idioma-nivel {
+    margin-top: 5px;
+    margin-bottom: 10px; /* Añadir margen inferior para separar los niveles */
+    margin-left: 5px; /* Añadir margen izquierdo para separar los niveles */
 }

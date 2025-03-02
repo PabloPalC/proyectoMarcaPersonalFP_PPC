@@ -10,7 +10,7 @@ const ResultadosBusquedaProyectos = ({ proyectosFiltrados }) => {
     }
 
     return (
-        <div className="container mt-3 busqueda-proyectos">
+        <div className="container-fluid mt-3 busqueda-proyectos">
             <div className="border p-3">
                 <h5 className="fw-bold">Resultados</h5>
                 <button className="boton-filtrar" onClick={mostrandoProyectos}>

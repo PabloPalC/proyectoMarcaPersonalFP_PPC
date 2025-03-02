@@ -1,8 +1,8 @@
-/* CSS PARA RESULTADOS BUSQUEDA PROYECTOS */s
-
-.busqueda-proyectos {
-    max-width: 800px;
-    margin: auto;
+.container-fluid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: start;
 }
 
 .boton-filtrar {
@@ -10,31 +10,16 @@
     border: none;
     color: black;
     font-weight: bold;
-    text-align: left;
     display: block;
     width: 100%;
     padding: 10px 0;
     cursor: pointer;
 }
 
-.botonFamilias{
-    color: black;
-    border-radius: 5px;
-    &:hover{
-        background-color: #ccc;
-    }
-}
-
 .boton-filtrar:hover {
     text-decoration: none;
 }
 
-.resultados {
-    margin-top: 20px;
-    padding: 15px;
-    border-top: 1px solid #ccc;
-}
-
-.sin-proyectos {
+.sin-alumnos {
     color: gray;
 }

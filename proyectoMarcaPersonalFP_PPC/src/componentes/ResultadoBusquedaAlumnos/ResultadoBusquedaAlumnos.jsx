@@ -2,7 +2,7 @@ import { useState } from 'react';
 import AlumnoMinCard from '../AlumnoMinCard/AlumnoMinCard';
 import './ResultadoBusquedaAlumnos.css';
 
-const ResultadosBusquedaAlumnos = ({ alumnosFiltrados }) => {
+const ResultadosBusquedaAlumnos = ({ alumnosFiltrados, alumnos }) => {
     const [mostrar, setMostrar] = useState(false);
 
     function mostrandoAlumnos() {
@@ -10,10 +10,10 @@ const ResultadosBusquedaAlumnos = ({ alumnosFiltrados }) => {
     }
 
     return (
-        <div className="container mt-3 busqueda-alumnos">
-            <div className="border p-3">
+        <div className="container-fluid mt-1 busqueda-alumnos w-100">
+            <div className="border p-3 w-100">
                 <h5 className="fw-bold">Resultados</h5>
-                <button className="boton-filtrar" onClick={mostrandoAlumnos}>
+                <button className="boton-filtrar w-100" onClick={mostrandoAlumnos}>
                     {mostrar ? '▲' : '▼'}
                 </button>
                 {mostrar && alumnosFiltrados.length > 0 && (

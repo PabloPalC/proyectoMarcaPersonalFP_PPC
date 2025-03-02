@@ -7,7 +7,10 @@ export async function getAlumnos() {
     // Suponiendo que familiasProfesionalesResponse es un array de objetos
     const listaAlumnos = alumnosResponse.map(alumnos => ({
         nombre: alumnos.nombre,
-        id: alumnos.id
+        apellidos: alumnos.apellidos,
+        idiomas: alumnos.idiomas,
+        ciclos: alumnos.ciclos,
+        competencias: alumnos.competencias,
     }));
 
     return {

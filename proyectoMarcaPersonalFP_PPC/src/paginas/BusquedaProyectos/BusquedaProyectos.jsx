@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import useProyectosFiltrados from "../../hooks/useProyectosFiltrados";
 import ResultadosBusquedaProyectos from '../../componentes/ResultadosBusquedaProyectos/ResultadosBusquedaProyectos';
 import ListaFamiliasProfesionales from '../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales';
-import '../../componentes/ListaFamiliasProfesionales/ListaFamiliasProfesionales.css';
+import './BusquedaProyectos.css';
 
 const BusquedaProyectos = () => {
     const [mostrar, setMostrar] = useState(false);
@@ -24,8 +24,8 @@ const BusquedaProyectos = () => {
     }
 
     return (
-        <div className="container mt-3 busqueda-proyectos">
-            <div className="border p-3">
+        <div className="container-fluid mt-3 busqueda-proyectos w-100">
+            <div className="border p-3 w-100">
                 <h5 className="fw-bold">Búsqueda de Proyectos</h5>
                 <button className="boton-filtrar" onClick={mostrandoFamilias}>
                     Filtrar por familia profesional {mostrar ? '▲' : '▼'}
